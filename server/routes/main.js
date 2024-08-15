@@ -3,11 +3,15 @@ const router = express.Router();
 
 // Routes
 router.get("", (req, res) => {
-  res.render("index");
+  const locals = {
+    title: "Aaron's Blog",
+    description: "Simple Blog Created By Aaron Thomas Blessen",
+  };
+  res.render("index", { locals });
 });
 
 router.get("/about", (req, res) => {
-    res.render("about");
-  });
+  res.render("about");
+});
 
 module.exports = router;
