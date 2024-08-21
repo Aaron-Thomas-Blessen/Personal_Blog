@@ -26,6 +26,7 @@ app.set("view engine", "ejs");
 
 // Use the routes defined in 'main.js'
 app.use("/", require("./server/routes/main"));
+app.use("/", require("./server/routes/admin"));
 
 // Start the server
 app.listen(PORT, () => {
