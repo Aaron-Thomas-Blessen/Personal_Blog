@@ -9,8 +9,8 @@ const Post = require('../models/Post');
 router.get('', async (req, res) => {
   try {
     const locals = {
-      title: "NodeJs Blog",
-      description: "Simple Blog created with NodeJs, Express & MongoDb."
+      title: "Aarons Blog",
+      description: "Created by Aaron Thomas Blessen."
     }
 
     let perPage = 10;
@@ -41,20 +41,7 @@ router.get('', async (req, res) => {
 
 });
 
-// router.get('', async (req, res) => {
-//   const locals = {
-//     title: "NodeJs Blog",
-//     description: "Simple Blog created with NodeJs, Express & MongoDb."
-//   }
 
-//   try {
-//     const data = await Post.find();
-//     res.render('index', { locals, data });
-//   } catch (error) {
-//     console.log(error);
-//   }
-
-// });
 
 
 /**
